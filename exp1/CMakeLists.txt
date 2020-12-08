@@ -1,8 +1,3 @@
-# CMake 最低版本号要求
-cmake_minimum_required (VERSION 2.8)
-
-# 项目信息
-project (Demo1)
-
-# 指定生成目标
-add_executable(Demo exp1.cpp)
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+project(recipe-01 LANGUAGES CXX)
+add_executable(hello-world hello.cpp)
