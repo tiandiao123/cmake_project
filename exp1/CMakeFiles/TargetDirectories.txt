@@ -1,0 +1,3 @@
+/home/tiger/cuiqing.li/cmake_exp/exp1/CMakeFiles/rebuild_cache.dir
+/home/tiger/cuiqing.li/cmake_exp/exp1/CMakeFiles/edit_cache.dir
+/home/tiger/cuiqing.li/cmake_exp/exp1/CMakeFiles/Demo.dir
