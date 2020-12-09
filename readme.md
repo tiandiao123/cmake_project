@@ -8,7 +8,7 @@ Here is [link](https://www.amazon.com/CMake-Cookbook-Building-packaging-software
 
 ### Notice:
 
-For all of exp directories, I suggest that you should use following way to execute:
+For all of exp directories, I suggest that you should use the following way to execute:
 ```
 # for example, I am using exp1 to demonstrate
 cd exp1
