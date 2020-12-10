@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 project(recipe-04 LANGUAGES CXX)
 
 # introduce a toggle for using a library
-set(USE_LIBRARY ON)
+set(USE_LIBRARY OFF)
 
 message(STATUS "Compile sources into a library? ${USE_LIBRARY}")
 
