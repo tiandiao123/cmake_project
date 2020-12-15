@@ -15,6 +15,5 @@ cd exp1
 mkdir build 
 cd build
 cmake ..
-cmake --build .
-
+make -j8
 ```
