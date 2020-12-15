@@ -1,21 +1,23 @@
 #include "sum_integers.hpp"
-
-// this tells catch to provide a main()
-// only do this in one cpp file
-#define CATCH_CONFIG_MAIN
-#include "catch.hpp"
+#include "gtest/gtest.h"
 
 #include <vector>
 
-TEST_CASE("Sum of integers for a short vector", "[short]") {
-  auto integers = {1, 2, 3, 4, 5};
-  REQUIRE(sum_integers(integers) == 15);
+int main(int argc, char **argv) {
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
 }
 
-TEST_CASE("Sum of integers for a longer vector", "[long]") {
-  std::vector<int> integers;
-  for (int i = 1; i < 1001; ++i) {
-    integers.push_back(i);
-  }
-  REQUIRE(sum_integers(integers) == 500500);
+TEST(example, sum_zero) {
+  auto integers = {1, -1, 2, -2, 3, -3};
+  auto result = sum_integers(integers);
+  ASSERT_EQ(result, 0);
 }
+
+TEST(example, sum_five) {
+  auto integers = {1, 2, 3, 4, 5};
+  auto result = sum_integers(integers);
+  ASSERT_EQ(result, 15);
+}
+
+
