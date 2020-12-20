@@ -33,6 +33,10 @@ add_custom_command(
   VERBATIM
   )
 
+
+message(STATUS, "CMAKE_CURRENT_SOURCE_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
+message(STATUS, "CMAKE_CURRENT_BINARY_DIR: ${CMAKE_CURRENT_BINARY_DIR}")
+
 add_library(math "")
 
 target_sources(math
